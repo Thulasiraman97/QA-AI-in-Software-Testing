@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Traditional vs Modern Testing</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 6rem 3rem 6rem;
+            justify-content: center;
+        }
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 80px 1fr;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .myth-card {
+            background-color: #f1f5f9; /* Changed from red to slate for 'Traditional' (neutral/old) */
+            border: 1px solid #cbd5e1;
+            border-left: 6px solid #64748b;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .reality-card {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 6px solid #22c55e;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            position: relative;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .connector-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #ecfdf5;
+            border-radius: 50%;
+            color: #34d399;
+            margin: 0 auto;
+        }
+        .bg-dots {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.3;
+            z-index: 0;
+        }</style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Pattern -->
+<div class="bg-dots"></div>
+<!-- Header -->
+<div class="px-20 py-8 flex items-center justify-between z-20 relative" style="padding-right: 10%;">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-green-50 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Evolution of QA</span>
+</div>
+<h1 class="text-4xl font-extrabold text-slate-900">Traditional vs Modern Testing</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-sm text-slate-500 font-medium">From Manual to</p>
+<p class="text-xl font-bold text-slate-800">Autonomous</p>
+</div>
+<div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-green-500">
+<i class="fas fa-random text-xl"></i>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper z-10">
+<!-- Column Headers -->
+<div class="grid grid-cols-[1fr_80px_1fr] gap-4 mb-6 px-2">
+<div class="text-center">
+<h3 class="text-xl font-bold text-slate-600 flex items-center justify-center gap-2">
+<i class="fas fa-history"></i> Traditional QA
+                </h3>
+</div>
+<div class="text-center text-slate-400 font-bold text-sm pt-1">VS</div>
+<div class="text-center">
+<h3 class="text-xl font-bold text-green-600 flex items-center justify-center gap-2">
+<i class="fas fa-robot"></i> Modern QA
+                </h3>
+</div>
+</div>
+<!-- Row 1: Execution -->
+<div class="comparison-row">
+<div class="myth-card">
+<div class="flex items-center gap-3">
+<div class="text-slate-500 text-xl"><i class="fas fa-user-edit"></i></div>
+<p class="text-slate-600 font-medium">Manual execution</p>
+</div>
+</div>
+<div class="connector-icon">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="reality-card">
+<div class="flex items-center gap-3">
+<div class="bg-green-100 p-2 rounded-md text-green-600"><i class="fas fa-magic"></i></div>
+<div>
+<p class="text-slate-800 font-bold">Automation + AI</p>
+<p class="text-xs text-slate-500 mt-0.5">Faster cycles &amp; greater coverage</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2: Scope -->
+<div class="comparison-row">
+<div class="myth-card">
+<div class="flex items-center gap-3">
+<div class="text-slate-500 text-xl"><i class="fas fa-desktop"></i></div>
+<p class="text-slate-600 font-medium">UI-based Testing</p>
+</div>
+</div>
+<div class="connector-icon">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="reality-card">
+<div class="flex items-center gap-3">
+<div class="bg-green-100 p-2 rounded-md text-green-600"><i class="fas fa-network-wired"></i></div>
+<div>
+<p class="text-slate-800 font-bold">API + Cloud + Performance</p>
+<p class="text-xs text-slate-500 mt-0.5">Full-stack quality assurance</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 3: Maintenance -->
+<div class="comparison-row">
+<div class="myth-card">
+<div class="flex items-center gap-3">
+<div class="text-slate-500 text-xl"><i class="fas fa-unlink"></i></div>
+<p class="text-slate-600 font-medium">Breaks when UI changes</p>
+</div>
+</div>
+<div class="connector-icon">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="reality-card">
+<div class="flex items-center gap-3">
+<div class="bg-green-100 p-2 rounded-md text-green-600"><i class="fas fa-heartbeat"></i></div>
+<div>
+<p class="text-slate-800 font-bold">Self-healing scripts</p>
+<p class="text-xs text-slate-500 mt-0.5">AI adapts to locator changes</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 4: Strategy -->
+<div class="comparison-row">
+<div class="myth-card">
+<div class="flex items-center gap-3">
+<div class="text-slate-500 text-xl"><i class="fas fa-exclamation-triangle"></i></div>
+<p class="text-slate-600 font-medium">Reactive Approach</p>
+</div>
+</div>
+<div class="connector-icon">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="reality-card">
+<div class="flex items-center gap-3">
+<div class="bg-green-100 p-2 rounded-md text-green-600"><i class="fas fa-chart-line"></i></div>
+<div>
+<p class="text-slate-800 font-bold">Predictive &amp; Autonomous</p>
+<p class="text-xs text-slate-500 mt-0.5">Prevents bugs before they happen</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Decor -->
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-green-50 rounded-full filter blur-3xl opacity-30 translate-y-1/2 translate-x-1/2"></div>
+</div>
+</body>
+</html>

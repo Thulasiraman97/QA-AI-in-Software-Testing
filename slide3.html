@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Why Software Testing Matters</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: #f8fafc; color: #1e293b; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    .slide-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 3rem 5rem;
+        gap: 3rem;
+    }
+    .stat-card {
+        transition: transform 0.3s ease;
+    }
+    .stat-number {
+        line-height: 1;
+    }</style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<div class="bg-white px-20 py-8 border-b border-slate-200 flex justify-between items-center z-10 relative" style="padding-right: 10%;">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="bg-green-50 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Impact Analysis</span>
+</div>
+<h1 class="text-4xl font-extrabold text-slate-900">Why Software Testing Matters</h1>
+</div>
+<div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-green-600">
+<i class="fas fa-shield-alt text-2xl"></i>
+</div>
+</div>
+<!-- Background Elements -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-slate-50 -z-0"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-green-50 rounded-full filter blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
+<div class="content-wrapper relative z-10 items-center">
+<!-- Left Column: The Risks (High Impact Stats) -->
+<div class="w-1/2 grid gap-6">
+<!-- Stat 1 -->
+<div class="stat-card bg-white p-8 rounded-2xl shadow-lg border-l-8 border-red-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<i class="fas fa-bug text-8xl"></i>
+</div>
+<p class="text-red-500 font-bold text-sm uppercase tracking-widest mb-2">Product Failures</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="stat-number text-7xl font-extrabold text-slate-800">80%</span>
+</div>
+<p class="text-slate-600 text-lg font-medium leading-relaxed">
+                    of product failures in the market are directly attributed to <span class="text-red-600 font-bold">poor testing</span> and quality assurance.
+                </p>
+</div>
+<!-- Stat 2 -->
+<div class="stat-card bg-white p-8 rounded-2xl shadow-lg border-l-8 border-orange-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<i class="fas fa-money-bill-wave text-8xl"></i>
+</div>
+<p class="text-orange-500 font-bold text-sm uppercase tracking-widest mb-2">Cost of Quality</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="text-4xl font-bold text-slate-400">₹</span>
+<span class="stat-number text-6xl font-extrabold text-slate-800">1 Cr</span>
+</div>
+<p class="text-slate-600 text-lg font-medium leading-relaxed">
+                    A single major production bug can cost companies between <span class="text-slate-900 font-bold">₹10 Lakh</span> and <span class="text-slate-900 font-bold">₹1 Crore</span> in revenue &amp; fixes.
+                </p>
+</div>
+</div>
+<!-- Right Column: The Value (Stability & Trust) -->
+<div class="w-1/2 pl-8 flex flex-col justify-center h-full">
+<div class="mb-10">
+<h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+<i class="fas fa-check-circle text-green-500"></i>
+                    Ensures Business Stability
+                </h3>
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
+<i class="fas fa-lock text-3xl text-green-500 mb-3"></i>
+<p class="font-semibold text-slate-700">Security</p>
+</div>
+<div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
+<i class="fas fa-chart-line text-3xl text-green-500 mb-3"></i>
+<p class="font-semibold text-slate-700">Stability</p>
+</div>
+<div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
+<i class="fas fa-handshake text-3xl text-green-500 mb-3"></i>
+<p class="font-semibold text-slate-700">Trust</p>
+</div>
+</div>
+</div>
+<div class="bg-white text-slate-900 p-8 rounded-2xl shadow-xl relative overflow-hidden border border-slate-200">
+<!-- Decorative pattern -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full filter blur-2xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+<h3 class="text-xl font-bold mb-6 border-b border-slate-200 pb-4">Critical Systems Depend on QA</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-green-600 flex-shrink-0">
+<i class="fas fa-mobile-alt"></i>
+</div>
+<p class="text-slate-600"><strong class="text-slate-900">Every UPI Transaction</strong> <br/><span class="text-sm">Zero tolerance for failure</span></p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-green-600 flex-shrink-0">
+<i class="fas fa-plane"></i>
+</div>
+<p class="text-slate-600"><strong class="text-slate-900">Flight Booking Systems</strong> <br/><span class="text-sm">Real-time data accuracy</span></p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-green-600 flex-shrink-0">
+<i class="fas fa-hospital"></i>
+</div>
+<p class="text-slate-600"><strong class="text-slate-900">Hospital Management</strong> <br/><span class="text-sm">Life-critical reliability</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>What is ISTQB?</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            padding: 2rem 5rem 4rem 5rem;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .definition-card {
+            position: relative;
+            z-index: 10;
+        }
+
+        .feature-item {
+            transition: transform 0.2s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: 0;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container">
+        <!-- Header -->
+        <div class="px-20 py-8 flex items-center justify-between z-20" style="padding-right: 10%;">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span
+                        class="bg-green-50 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Global
+                        Standard</span>
+                </div>
+                <h1 class="text-4xl font-extrabold text-slate-900">What is ISTQB?</h1>
+            </div>
+            <!-- Decorative Element -->
+            <div class="w-12 h-1 bg-green-500 rounded-full"></div>
+        </div>
+        <!-- Background Decorations -->
+        <div class="blob bg-green-100 w-96 h-96 rounded-full top-0 right-0 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="blob bg-green-50 w-64 h-64 rounded-full bottom-0 left-0 translate-y-1/2 -translate-x-1/2"></div>
+        <!-- Main Content -->
+        <div class="content-wrapper z-10">
+            <!-- Left Column: Definition & Goal -->
+            <div class="w-1/2 flex flex-col gap-8">
+                <div class="definition-card">
+                    <h2 class="text-3xl font-bold text-slate-800 leading-tight mb-6">
+                        International Software Testing <span
+                            class="text-green-600 underline decoration-4 decoration-green-200">Qualifications
+                            Board</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        The leading global organization that defines the standard curriculum and certification path for
+                        software testing professionals worldwide.
+                    </p>
+                </div>
+                <!-- Goal Box -->
+                <div
+                    class="bg-white text-slate-900 p-6 rounded-xl shadow-xl border border-slate-200 border-l-8 border-green-500 relative overflow-hidden group">
+                    <div
+                        class="absolute right-0 top-0 p-4 opacity-10 text-green-600 transform group-hover:scale-110 transition-transform">
+                        <i class="fas fa-globe-americas text-8xl"></i>
+                    </div>
+                    <p class="text-green-400 font-bold text-sm uppercase tracking-widest mb-2">Global Reach</p>
+                    <p class="text-2xl font-bold leading-snug">Standardizing testing<br />in over 130 countries.</p>
+                </div>
+            </div>
+            <!-- Right Column: Key Aspects & Impact -->
+            <div class="w-1/2 pl-8 border-l border-slate-200">
+                <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-medal text-green-500"></i>
+                    Why Get Certified?
+                </h3>
+                <!-- Grid of Benefits -->
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div
+                        class="feature-item bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="font-semibold text-slate-700">Job Opportunities</p>
+                    </div>
+                    <div
+                        class="feature-item bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <p class="font-semibold text-slate-700">Structured Learning</p>
+                    </div>
+                    <div
+                        class="feature-item bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <p class="font-semibold text-slate-700">Common Language</p>
+                    </div>
+                    <div
+                        class="feature-item bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-arrow-up-right-dots"></i>
+                        </div>
+                        <p class="font-semibold text-slate-700">Career Growth</p>
+                    </div>
+                </div>
+                <!-- Certification Path -->
+                <div class="bg-green-50 rounded-xl p-6 border border-green-100">
+                    <p class="text-xs font-bold text-green-800 uppercase tracking-wide mb-3">Certification Levels</p>
+                    <div class="flex items-center justify-between text-sm font-semibold text-slate-700">
+                        <div class="flex flex-col items-center gap-2">
+                            <div
+                                class="w-8 h-8 rounded-full bg-white border-2 border-green-200 flex items-center justify-center text-green-600">
+                                1</div>
+                            <span>Foundation</span>
+                        </div>
+                        <div class="h-0.5 flex-1 bg-green-100 mx-2"></div>
+                        <div class="flex flex-col items-center gap-2">
+                            <div
+                                class="w-8 h-8 rounded-full bg-white border-2 border-green-400 flex items-center justify-center text-green-700">
+                                2</div>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="h-0.5 flex-1 bg-green-100 mx-2"></div>
+                        <div class="flex flex-col items-center gap-2">
+                            <div
+                                class="w-8 h-8 rounded-full bg-white border-2 border-green-600 flex items-center justify-center text-green-900">
+                                3</div>
+                            <span>Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

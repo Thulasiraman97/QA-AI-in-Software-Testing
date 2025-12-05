@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Popular AI Testing Tools</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/><link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/><style>
+body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: #f8fafc; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+.slide-container { width: 100vw; height: 100vh; display: flex; flex-direction: column; background-color: #f8fafc; position: relative; overflow: hidden; }
+.content-wrapper { flex: 1; display: flex; flex-direction: column; padding: 1rem 5rem 3rem 5rem; justify-content: center; z-index: 10; }
+.tool-card { background-color: white; border-radius: 1rem; padding: 1.25rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0; transition: all 0.3s ease; display: flex; flex-direction: column; height: 100%; position: relative; overflow: hidden; }
+.tool-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; }
+.tool-card.nlp::before { background-color: #34d399; }
+.tool-card.healing::before { background-color: #14b8a6; }
+.tool-card.visual::before { background-color: #ec4899; }
+.tool-card.ml::before { background-color: #f97316; }
+.tool-card.genai::before { background-color: #0ea5e9; }
+.tool-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+.tool-tag { display: inline-flex; align-items: center; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; margin-right: 0.5rem; margin-bottom: 0.5rem; background-color: #f1f5f9; color: #475569; }
+.grid-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+.grid-bottom { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.bg-dots { background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 20px 20px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.4; z-index: 0; }</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="bg-dots"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-purple-50 rounded-full filter blur-3xl opacity-60 -translate-y-1/4 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-green-50 rounded-full filter blur-3xl opacity-60 translate-y-1/4 -translate-x-1/4"></div>
+<div class="px-20 py-6 flex items-center justify-between z-20 relative" style="padding-right: 10%;">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">AI & ML Stack</span>
+</div>
+<h1 class="text-4xl font-extrabold text-slate-900">Popular AI Testing Tools</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden md:block">
+<p class="text-sm text-slate-500 font-medium">Next-Gen Technologies</p>
+<p class="text-xl font-bold text-slate-800">AI-Powered QA</p>
+</div>
+<div class="w-14 h-14 bg-white shadow-sm rounded-full flex items-center justify-center text-purple-600 border border-purple-50">
+<i class="fas fa-robot text-2xl"></i>
+</div>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="grid-top">
+<div class="tool-card visual">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-pink-50 flex items-center justify-center text-pink-600"><i class="fas fa-eye text-lg"></i></div>
+<div>
+<h3 class="text-lg font-bold text-slate-800">Visual AI</h3>
+<p class="text-xs text-slate-500">Pixel-Perfect Validation</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-auto"><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-pink-500"></i>Applitools</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-pink-500"></i>Percy</span></div>
+</div>
+<div class="tool-card healing">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center text-teal-600"><i class="fas fa-heart-pulse text-lg"></i></div>
+<div>
+<h3 class="text-lg font-bold text-slate-800">Self-Healing</h3>
+<p class="text-xs text-slate-500">Auto-Maintenance Scripts</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-auto"><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-teal-500"></i>Testim</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-teal-500"></i>Mabl</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-teal-500"></i>Healenium</span></div>
+</div>
+<div class="tool-card nlp">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center text-green-600"><i class="fas fa-comments text-lg"></i></div>
+<div>
+<h3 class="text-lg font-bold text-slate-800">NLP & Low-Code</h3>
+<p class="text-xs text-slate-500">Plain English Tests</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-auto"><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-green-500"></i>TestSigma</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-green-500"></i>AccelQ</span></div>
+</div>
+</div>
+<div class="grid-bottom">
+<div class="tool-card ml">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center text-orange-600"><i class="fas fa-brain text-lg"></i></div>
+<div>
+<h3 class="text-lg font-bold text-slate-800">Intelligent Functional</h3>
+<p class="text-xs text-slate-500">Predictive & Data-Driven</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-auto"><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-orange-500"></i>Functionize</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-orange-500"></i>ReportPortal</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-orange-500"></i>Sealights</span></div>
+</div>
+<div class="tool-card genai">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center text-sky-600"><i class="fas fa-wand-magic-sparkles text-lg"></i></div>
+<div>
+<h3 class="text-lg font-bold text-slate-800">Generative AI</h3>
+<p class="text-xs text-slate-500">Code & Data Creation</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-1 mt-auto"><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-sky-500"></i>GitHub Copilot</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-sky-500"></i>CodiumAI</span><span class="tool-tag"><i class="fas fa-bolt text-xs mr-1 text-sky-500"></i>ChatGPT</span></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
