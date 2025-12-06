@@ -159,7 +159,7 @@
     </div>
 
     <!-- Slide counter (optional - remove if not needed) -->
-    <div class="slide-counter" id="slideCounter">1 / 24</div>
+    <div class="slide-counter" id="slideCounter">1 / 22</div>
 
     <script>
         let currentSlide = 0;
@@ -169,8 +169,10 @@
         let counterTimeout;
 
         function showSlide(n) {
+            if (n >= totalSlides || n < 0) return;
+
             slides[currentSlide].classList.remove('active');
-            currentSlide = (n + totalSlides) % totalSlides;
+            currentSlide = n;
             slides[currentSlide].classList.add('active');
 
             // Update and show counter briefly
